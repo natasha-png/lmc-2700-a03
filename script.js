@@ -11,7 +11,9 @@ class Movie {
 
 //add a movie OBJECT to the allMovies array
 let addMovie = (movie) => {
-    allMovies.push(movie);
+    if (movie != null) {
+        allMovies.push(movie);
+    }
     console.log("A new movie is added")
 }
 
